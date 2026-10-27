@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Vacations</title>
+
+    <link rel = "icon" href="images/banner.jpeg">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="scripts/vacation.js" defer></script>
+</head>
+<body>
+
+    <div id = "main">
+
+        <div id = "header">
+
+            <img src="images/banner.jpeg">
+            <h1>Book Your Dream Vacation</h1>
+
+        </div>
+
+        <form id="vacation-form" action = "/find-vacation" method = "post">
+
+            <!--Destination DROP DOWN-->
+
+            <fieldset>
+
+                <legend>Destination</legend>
+                
+                <span class="err" id ="err-destination">Select a destination</span>
+
+                <select id = "size" name = "size">
+                    <option value = "none"> -- Choose a destination -- </option>
+
+                    <option value = "none"> Bali, Indonesia </option>
+
+                    <option value = "none"> Paris, France </option>
+
+                    <option value = "none"> Tokyo, Japan </option>
+
+                    <option value = "none"> Seattle, Washington </option>
+
+                    <option value = "none"> Tampa Bay, Florida </option>
+                </select>
+
+            </fieldset>
+
+
+            <!--Departure date INPUT TYPE="DATE"-->
+            <fieldset>
+
+                <legend>Departure Date</legend>
+
+                <input type="date" id = "departure" name = "departure-date" value = "departure">
+
+            </fieldset>
+
+            <!--Traveler number INPUT TYPE = NUMBER-->
+            <fieldset>
+                <legend>Number of Travelers</legend>
+
+                <input type="number" id = "travelers" name = "traveler-num" value = "travelers">
+
+            </fieldset>
+
+        </form>
+
+
+    </div>
+
+    
+</body>
+</html>
