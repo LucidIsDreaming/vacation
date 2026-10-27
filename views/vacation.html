@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Vacations</title>
 
-    <link rel = "icon" href="images/banner.jpeg">
+    <link rel = "icon" href="images/cool-vacation.png">
 
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -29,21 +29,21 @@
             <fieldset>
 
                 <legend>Destination</legend>
-                
-                <span class="err" id ="err-destination">Select a destination</span>
 
-                <select id = "size" name = "size">
+                <span class="err" id ="err-destination">Please select a destination</span>
+                
+                <select id = "destination" name = "destination">
                     <option value = "none"> -- Choose a destination -- </option>
 
-                    <option value = "none"> Bali, Indonesia </option>
+                    <option value = "bali"> Bali, Indonesia </option>
 
-                    <option value = "none"> Paris, France </option>
+                    <option value = "paris"> Paris, France </option>
 
-                    <option value = "none"> Tokyo, Japan </option>
+                    <option value = "tokyo"> Tokyo, Japan </option>
 
-                    <option value = "none"> Seattle, Washington </option>
+                    <option value = "seattle"> Seattle, Washington </option>
 
-                    <option value = "none"> Tampa Bay, Florida </option>
+                    <option value = "florida"> Tampa Bay, Florida </option>
                 </select>
 
             </fieldset>
@@ -61,15 +61,28 @@
             <!--Traveler number INPUT TYPE = NUMBER-->
             <fieldset>
                 <legend>Number of Travelers</legend>
+                <span class="err" id ="err-travelers">Travelers must be greater than 0</span>
 
-                <input type="number" id = "travelers" name = "traveler-num" value = "travelers">
+                <input type="number" id = "travelers" name = "traveler-num">
 
             </fieldset>
+
+            <button type="submit" id="find-vacation">Find my Vacation</button>
 
         </form>
 
 
     </div>
+
+    <footer>
+
+        <div class = "footer-content">
+
+            <h4>GitHub Repository: https://github.com/LucidIsDreaming/vacation.git</h4>
+
+        </div>
+
+    </footer>
 
     
 </body>
